@@ -488,7 +488,7 @@ function pick(seed,ex,mode){const r=rng(seed);ex=new Set(ex||[]);
    1. Firebase (when FIREBASE_CONFIG below is filled in): sign-in, saved history, shared daily rankings. Use this on GitHub Pages.
    2. claude.ai (when opened as a Claude artifact): the viewer's claude.ai account, private history.
    3. Guest: history in this browser only. */
-const FIREBASE_CONFIG=null; // paste your Firebase web config here: {apiKey:"...",authDomain:"...",projectId:"...",appId:"..."}
+const FIREBASE_CONFIG={apiKey:"AIzaSyA2Qzszk7frSSYUWIdPWbtqvmu_GD7WJ0g",authDomain:"yardillion.firebaseapp.com",projectId:"yardillion",storageBucket:"yardillion.firebasestorage.app",messagingSenderId:"412285491779",appId:"1:412285491779:web:38ee65dc78edc42a1d92f6",measurementId:"G-NLQ4781V39"}; // paste your Firebase web config here: {apiKey:"...",authDomain:"...",projectId:"...",appId:"..."}
 const FB_VER="10.12.2";
 let ACCT={state:"loading"},DB=null,FB=null,HIST=[],screen="home";
 function histList(){return ACCT.state==="in"?HIST:store.hist}
